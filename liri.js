@@ -41,8 +41,8 @@ client.get('statuses/user_timeline', params, function (error, tweets, response) 
   }
 
   // console.log(tweets)
-  for (var i = 0; i < tweets.length; i++) {
-    console.log (tweets[i].text);
+  for (var i = 0; i < 20; i++) {
+    console.log ("-------------------\n" + tweets[i].text + "\n" + "Tweeted at: " + tweets[i].created_at );
   }
   })
 }
@@ -50,20 +50,19 @@ client.get('statuses/user_timeline', params, function (error, tweets, response) 
 // spotify
 
 function spotifyThis(){
-  spotify.search({ type: 'track', query: "despacito" }, function(err, data) {
+  spotify.search({ type: 'track', query:  process.argv[3]  }, function(err, data) {
     if (err) {
       console.log('Error occurred: ' + err);
       return;
     }
     else {
-      // Artist(s)-song's name -preview link of the song-album that the song is from
-    for (i=0; i<data.tracks.items.length; i++){
+
     console.log('');
-    console.log("Artist Name: " + data.tracks.items[i].artists[0].name);
-    console.log("Track Name: " + data.tracks.items[i].name);
-    console.log("Album Name: " + data.tracks.items[i].album.name);
-    console.log("Preview Link: " + data.tracks.items[i].preview_url);
-        }
+    console.log("Artist Name: " + data.tracks.items[0].artists[0].name);
+    console.log("Track Name: " + data.tracks.items[0].name);
+    console.log("Album Name: " + data.tracks.items[0].album.name);
+    console.log("Preview Link: " + data.tracks.items[0].preview_url);
+        // }
       }
   });
 };
@@ -71,15 +70,9 @@ function spotifyThis(){
 
 function movieThis(){
 
-	// var movieName = userInput;
-	// if(!movieName){
-	// 	movieName = "mr nobody";
-  // }
-  var movieName = "";
+  var movieName = "Titanic";
 
-	// var params = movieName;
-
-	var movieQueryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
+	var movieQueryUrl = "http://www.omdbapi.com/?t=" + process.argv[3] + "&y=&plot=short&apikey=trilogy";
 
 	request(movieQueryUrl, function(error, response, body){
 
@@ -102,7 +95,7 @@ function movieThis(){
 		}
 		
 	else {
-    console.log("No movie entered");
+    console.log("If you haven't watched 'Mr. Nobody', then you should: http://www.imdb.com/title/tt0485947/");
     }
 	});
 }
