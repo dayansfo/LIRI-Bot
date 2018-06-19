@@ -10,12 +10,12 @@ LIRI-Bot is a Language Interpretation and Recognition Interface. LIRI-Bot is a c
 
 **Getting Started
 
-*Clone down repo.
-*Run command 'npm install' in Terminal or GitBash
-*Run command 'node liri.js' or one of the commands below.
-*What Each Command Does
-*node liri.js my-tweets
-*Displays my last 20 tweets and when they were created in terminal/bash window.
+Clone down repo.
+Run command 'npm install' in Terminal or GitBash
+Run command 'node liri.js' or one of the commands below.
+What Each Command Does
+node liri.js my-tweets
+Displays my last 20 tweets and when they were created in terminal/bash window.
 
 1. node liri.js spotify-this-song <song name>
 	
