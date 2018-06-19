@@ -8,7 +8,7 @@ LIRI-Bot is a Language Interpretation and Recognition Interface. LIRI-Bot is a c
 
 	do-what-it-says
 
-** Getting Started
+## Getting Started
 
 Clone down repo.
 Run command 'npm install' in Terminal or GitBash
