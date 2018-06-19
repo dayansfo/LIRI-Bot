@@ -1,33 +1,55 @@
-LIRI-Bot is a Language Interpretation and Recognition Interface. It's a powerful node.js application that runs in the terminal.
+LIRI-Bot is a Language Interpretation and Recognition Interface. LIRI-Bot is a command line node app that takes in parameters and returns data based on one of four commands:
 
-* What it does:
+	my-tweets
 
-	- Search Spotify a song
-	- Show my Tweets 
-	- Search OMBD for a movie
-	- Do what I say (reads text file and perform action)
+	spotify-this-song
 
-* For Tweets run: 
+	movie-this
+
+	do-what-it-says
+
+Getting Started
+
+Clone down repo.
+Run command 'npm install' in Terminal or GitBash
+Run command 'node liri.js' or one of the commands below.
+What Each Command Does
+node liri.js my-tweets
+Displays my last 20 tweets and when they were created in terminal/bash window.
+
+1. node liri.js spotify-this-song <song name>
 	
-	node liri my-tweets
-		
-my-tweets This will show your last 20 tweets and when they were created at in your terminal/bash window.
+Shows the following information about the song in terminal/bash window.
+Artist(s)
+The song's name
+A preview link of the song from Spotify
+The album that the song is from
 
-* For Spotify run: 
-
-	node liri spotify-this-song <'song name'> 
+2. node liri.js movie-this <movie name>
 	
-This will show the following information about the song in your terminal/bash window *Artist(s) *The song's name *A preview link of the song from Spotify *The album that the song is from
+Shows the following information in terminal/bash.
+Title of the movie.
+Year the movie came out.
+IMDB Rating of the movie.
+Country where the movie was produced.
+Language of the movie.
+Plot of the movie.
+Actors in the movie.
+Rotten Tomatoes Rating.
+Rotten Tomatoes URL.
+Or if no movie is passed through, it will default to "Mr. Nobody"
 
-*For Movies run: 
+3. node liri.js do-what-it-says
+Takes the text from random.txt and runs the song through spotify-this-song command
 
-	node liri movie-this <'movie name'>
-	
-This will output the movie title, year, IMDB rating, Rotten Tomatoes rating, country it was produce,language, 
-plot and actors.
+Tech used
+Node.js
+Twitter NPM Package - https://www.npmjs.com/package/twitter
+Spotify NPM Package - https://www.npmjs.com/package/spotify
+Request NPM Package - https://www.npmjs.com/package/request
 
-* For Do What I Say run: 
-	
-	node liri do-what-I-Say
+Prerequisites
+- Node.js - Download the latest version of Node https://nodejs.org/en/
 
-Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands. -It should run spotify-this-song for "I Want it That Way," as follows the text in random.txt. 
+Authors
+Dayan Thorne - Node JS 
