@@ -8,14 +8,14 @@ LIRI-Bot is a Language Interpretation and Recognition Interface. LIRI-Bot is a c
 
 	do-what-it-says
 
-Getting Started
+**Getting Started
 
-Clone down repo.
-Run command 'npm install' in Terminal or GitBash
-Run command 'node liri.js' or one of the commands below.
-What Each Command Does
-node liri.js my-tweets
-Displays my last 20 tweets and when they were created in terminal/bash window.
+*Clone down repo.
+*Run command 'npm install' in Terminal or GitBash
+*Run command 'node liri.js' or one of the commands below.
+*What Each Command Does
+*node liri.js my-tweets
+*Displays my last 20 tweets and when they were created in terminal/bash window.
 
 1. node liri.js spotify-this-song <song name>
 	
@@ -42,14 +42,15 @@ Or if no movie is passed through, it will default to "Mr. Nobody"
 3. node liri.js do-what-it-says
 Takes the text from random.txt and runs the song through spotify-this-song command
 
-Tech used
+**Tech used
+
 Node.js
 Twitter NPM Package - https://www.npmjs.com/package/twitter
 Spotify NPM Package - https://www.npmjs.com/package/spotify
 Request NPM Package - https://www.npmjs.com/package/request
 
-Prerequisites
-- Node.js - Download the latest version of Node https://nodejs.org/en/
+**Prerequisites
 
-Authors
-Dayan Thorne - Node JS 
+Node.js - Download the latest version of Node https://nodejs.org/en/
+
+
