@@ -42,14 +42,14 @@ Or if no movie is passed through, it will default to "Mr. Nobody"
 3. node liri.js do-what-it-says
 Takes the text from random.txt and runs the song through spotify-this-song command
 
-**Tech used
+## Tech used
 
-Node.js
-Twitter NPM Package - https://www.npmjs.com/package/twitter
-Spotify NPM Package - https://www.npmjs.com/package/spotify
-Request NPM Package - https://www.npmjs.com/package/request
+-Node.js
+-Twitter NPM Package - https://www.npmjs.com/package/twitter
+-Spotify NPM Package - https://www.npmjs.com/package/spotify
+-Request NPM Package - https://www.npmjs.com/package/request
 
-**Prerequisites
+## Prerequisites
 
 Node.js - Download the latest version of Node https://nodejs.org/en/
 
