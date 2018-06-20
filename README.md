@@ -44,10 +44,10 @@ Takes the text from random.txt and runs the song through spotify-this-song comma
 
 ## Tech used
 
--Node.js
--Twitter NPM Package - https://www.npmjs.com/package/twitter
--Spotify NPM Package - https://www.npmjs.com/package/spotify
--Request NPM Package - https://www.npmjs.com/package/request
+*Node.js
+*Twitter NPM Package - https://www.npmjs.com/package/twitter
+*Spotify NPM Package - https://www.npmjs.com/package/spotify
+*Request NPM Package - https://www.npmjs.com/package/request
 
 ## Prerequisites
 
